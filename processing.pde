@@ -34,12 +34,7 @@ void draw() {
 void setupSerial() {
   printArray(Serial.list());
   myPort = new Serial(this, Serial.list()[0], 9600);
-  // WARNING!
-  // You will definitely get an error here.
-  // Change the PORT_INDEX to 0 and try running it again.
-  // And then, check the list of the ports,
-  // find the port "/dev/cu.usbmodem----" or "/dev/tty.usbmodem----" 
-  // and replace PORT_INDEX above with the index number of the port.
+
 
   myPort.clear();
   // Throw out the first reading,
